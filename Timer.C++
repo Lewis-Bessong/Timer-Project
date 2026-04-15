@@ -13,7 +13,7 @@ int main() {
     auto ten_seconds = 10s; // stores 5 seconds in time, five_seconds(variable) = 5 seconds (std::chrono::duration(5))
     std::this_thread::sleep_for(ten_seconds); // current thread Blocks execution based on sleep duration
 
-    std::cout << "Okay I waited for 10 seconds what you want?" << std::endl;
+    std::cout << "Okay I waited for 10 seconds what you want?" << std::endl; // results after blocked execution in thread
 
     
     /*
@@ -24,3 +24,7 @@ int main() {
     */
 
 }
+
+
+// Next: figure out how to implement logic to countdown duration of time
+// Understand: other chrono functions (like time points)
