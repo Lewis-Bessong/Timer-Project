@@ -2,13 +2,12 @@
 #include <chrono>
 #include <thread>
 
+using namespace std::chrono; //used for not writing full chrono stuf?
 
 int main() {
 
-    std::chrono::seconds five_seconds = std::chrono::seconds(5); // stores 5 sends in time
+   
+    auto five_seconds = 5s; // stores 5 seconds in time, five_seconds(variable) = 5 seconds (std::chrono::duration(5))
+    std::this_thread::sleep_for(five_seconds); 
 
-
-
-
-    return 0;
 }
