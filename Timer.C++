@@ -7,6 +7,7 @@ using namespace std::chrono_literals;
 
 int main() {
 
+    /*
     // example use of duration(chrono) 
     std::cout << "This application will wait for 20 seconds before execution." << std::endl;
 
@@ -15,6 +16,8 @@ int main() {
     std::this_thread::sleep_for(twenty_Seconds); // stops execution for 20 seconds
 
     std::cout << "Thank you for waiting." << std::endl;
+     
+    */
 
     //example use of time point 
     
@@ -25,28 +28,16 @@ int main() {
     std::chrono::duration<double> elapsed = end - start; //subtraction of both timepoints to get a duration
 
     std::cout << "Time Passed: " << elapsed.count() << " seconds" << std::endl; // print out duration
-
-
-
-
-
     
+}
 
 
+// Next: figure out timepoints for timer
+// Understand: still need to understand timepoints, and clocks
 
-
-    
-
-    
-    /*
+/*
 
     auto five_seconds = 5s; 
     std::this_thread::sleep_for(five_seconds); 
 
     */
-
-}
-
-
-// Next: figure out how to implement logic to countdown duration of time
-// Understand: other chrono functions (like time points)
