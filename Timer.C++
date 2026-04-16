@@ -34,6 +34,7 @@ int main() {
 
 // Next: figure out timepoints for timer
 // Understand: still need to understand timepoints, and clocks
+// Plan: Create branch for feature commits, with main being functioning
 
 /*
 
