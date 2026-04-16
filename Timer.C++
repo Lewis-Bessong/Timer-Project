@@ -7,13 +7,14 @@ using namespace std::chrono_literals;
 
 int main() {
 
-    std::cout << "You: Hey waiter, I dont know what to order can you wait 10 seconds for me?" << std::endl; 
-    std::cout << "Waitier: Yea sure I can wait." << std::endl; 
-    
-    auto ten_seconds = 10s; // stores 5 seconds in time, five_seconds(variable) = 5 seconds (std::chrono::duration(5))
-    std::this_thread::sleep_for(ten_seconds); // current thread Blocks execution based on sleep duration
+    // example use of duration(chrono) 
+    std::cout << "This application will wait for 20 seconds before execution." << std::endl;
 
-    std::cout << "Okay I waited for 10 seconds what you want?" << std::endl; // results after blocked execution in thread
+    auto twenty_Seconds = 20s; // duration literal form, real form (std::chrono::seconds(20))
+
+    std::this_thread::sleep_for(twenty_Seconds); // stops execution for 20 seconds
+
+    std::cout << "Thank you for waiting." << std::endl;
 
     
     /*
