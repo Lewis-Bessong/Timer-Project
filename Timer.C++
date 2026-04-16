@@ -16,6 +16,27 @@ int main() {
 
     std::cout << "Thank you for waiting." << std::endl;
 
+    //example use of time point 
+    
+    auto start = std::chrono::steady_clock::now(); // clock used for time point, clock that doesn't go backwards used for stopwatches
+
+    auto end = std::chrono::steady_clock::now(); 
+
+    std::chrono::duration<double> elapsed = end - start; //subtraction of both timepoints to get a duration
+
+    std::cout << "Time Passed: " << elapsed.count() << " seconds" << std::endl; // print out duration
+
+
+
+
+
+    
+
+
+
+
+    
+
     
     /*
 
