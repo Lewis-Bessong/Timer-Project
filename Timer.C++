@@ -30,6 +30,10 @@ int main() {
 
     auto duration = steady_clock::now() - old; 
 
+    std::cout << duration.count() << "\n";
+
+}
+
 
 // Next: figure out timepoints for timer
 // Understand: still need to understand timepoints, and clocks
