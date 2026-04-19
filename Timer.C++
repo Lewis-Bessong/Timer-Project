@@ -23,7 +23,7 @@ int main() {
     // 2nd time point (subtract new from old)
     auto dur = steady_clock::now() - old; // duration (time point - time point)
 
-    std::cout << "Duration: " << dur.count() << std::endl; // shows how long
+    std::cout << "Duration: " << duration_cast<minutes>(dur).count() << std::endl; // shows how long, by formating in minutes
 }
 
 
