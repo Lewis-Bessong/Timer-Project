@@ -21,15 +21,14 @@ int main() {
 
     //example use of time point 
     
-    auto start = std::chrono::steady_clock::now(); // clock used for time point, clock that doesn't go backwards used for stopwatches
+    // 
+    auto old = steady_clock::now();
 
-    auto end = std::chrono::steady_clock::now(); 
+    std::cout << "Hello\n";
+    std::cout << "This is inbetween the old time point and new time point\n";
+    std::cout << "Thank You" << std::endl;
 
-    std::chrono::duration<double> elapsed = end - start; //subtraction of both timepoints to get a duration
-
-    std::cout << "Time Passed: " << elapsed.count() << " seconds" << std::endl; // print out duration
-    
-}
+    auto duration = steady_clock::now() - old; 
 
 
 // Next: figure out timepoints for timer
