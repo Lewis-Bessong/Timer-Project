@@ -27,8 +27,8 @@ int main() {
 }
 
 
-// Next: figure out timepoints for timer
-// Understand: still need to understand timepoints, and clocks
+// Next: figure out why duration is 0 when formatted to minutes
+// Understand: how time points could connect to timer
 // Plan: Create branch for feature commits, with main being functioning
 
 /*
