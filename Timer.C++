@@ -7,31 +7,23 @@ using namespace std::chrono_literals;
 
 int main() {
 
-    /*
-    // example use of duration(chrono) 
-    std::cout << "This application will wait for 20 seconds before execution." << std::endl;
+    // 1st time point (old)
+    auto old = steady_clock::now(); 
 
-    auto twenty_Seconds = 20s; // duration literal form, real form (std::chrono::seconds(20))
+    std::cout << "Hello, Welcome to my Timer Project." << std::endl;
+    std::cout << "Right now this is in a timer and at the end it will tell you how long." << std::endl;
+    std::cout << "The application will pause for a bit now. (Will come back)" << std::endl;
 
-    std::this_thread::sleep_for(twenty_Seconds); // stops execution for 20 seconds
+    auto ten_seconds = std::chrono::seconds(10); // Duration of 10 seconds 
 
-    std::cout << "Thank you for waiting." << std::endl;
-     
-    */
+    std::this_thread::sleep_for(ten_seconds); //System stops for 10 seconds 
 
-    //example use of time point 
-    
-    // 
-    auto old = steady_clock::now();
+    std::cout << "And were back!" << std::endl;
 
-    std::cout << "Hello\n";
-    std::cout << "This is inbetween the old time point and new time point\n";
-    std::cout << "Thank You" << std::endl;
+    // 2nd time point (subtract new from old)
+    auto dur = steady_clock::now() - old; // duration (time point - time point)
 
-    auto duration = steady_clock::now() - old; 
-
-    std::cout << duration.count() << "\n";
-
+    std::cout << "Duration: " << dur.count() << std::endl; // shows how long
 }
 
 
