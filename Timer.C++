@@ -7,41 +7,7 @@ using namespace std::chrono; //used for not writing full chrono stuf?
 using namespace std::chrono_literals;
 
 int main() {
-
-    // start of epoc (!st time point)
-    auto old = steady_clock::now();
-
-    // code in between time points
-    std::string user_response;  
-
-    std::cout << "Welcome to my survey!" << std::endl;
-    std::cout << "All question will be easy genral questions.\n";
-    std::cout << "Are you ready to start? (Y/N): ";
-    
-    std::cin >> user_response;
-
-    if (user_response == "Y" || user_response == "y") {
-
-        std::cout << "Okay first question." << std::endl;
-        
-    } else if (user_response == "N" || user_response == "n") {
-
-        std::cout << "Okay we will wait for ten seconds." << std::endl;
-
-        auto ten_seconds = std::chrono::duration(10s);
-
-        std::this_thread::sleep_for(ten_seconds); // stops for 10 seconds
-
-        std::cout << "\nOkay pal you should be redy now." << std::endl; 
-    } else {
-
-        std::cout << "Wrong thing brotha." << std::endl;
-    }
-
-    
-    auto dur = steady_clock::now() - old;
-
-    std::cout<< "Duration: " << duration_cast<seconds>(dur).count() << std::endl; // shows how long whole system took based on user 
+ 
 
 }   
 
