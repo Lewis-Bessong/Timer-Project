@@ -24,6 +24,11 @@ class Timer {
             std::cin >> UserChoice;
         }
 
+        void SystemLogic() {
+
+            
+        }
+
 
     private:
 
