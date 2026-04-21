@@ -45,10 +45,18 @@ int main() {
 
 }   
 
+/*
 
-// Next: learn more about chrono and tie everything into timer
-// Understand: how time points could connect to timer
-// Plan: Create branch for feature commits, with main being functioning
+TODO
+
+. Added to system logic (if conditional, time logic)
+. Figure out how to connect user input to timer knowledge
+. explore ways to go about class
+
+
+*/
+
+
 
 /*
 
