@@ -41,12 +41,12 @@ int main() {
     
     auto dur = steady_clock::now() - old;
 
-    std::<< "Duration: " << duration_cast<seconds>(dur).count() << std::endl; // shows how long whole system took based on user 
+    std::cout<< "Duration: " << duration_cast<seconds>(dur).count() << std::endl; // shows how long whole system took based on user 
 
 }   
 
 
-// Next: figure out why duration is 0 when formatted to minutes
+// Next: learn more about chrono and tie everything into timer
 // Understand: how time points could connect to timer
 // Plan: Create branch for feature commits, with main being functioning
 
