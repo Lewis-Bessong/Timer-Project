@@ -38,8 +38,10 @@ int main() {
         std::cout << "Wrong thing brotha." << std::endl;
     }
 
-    auto 
-    auto dur = 
+    
+    auto dur = steady_clock::now() - old;
+
+    std::<< "Duration: " << duration_cast<seconds>(dur).count() << std::endl; // shows how long whole system took based on user 
 
 }   
 
