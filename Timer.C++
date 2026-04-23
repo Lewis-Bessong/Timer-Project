@@ -53,6 +53,12 @@ TODO
 . Figure out how to connect user input to timer knowledge
 . explore ways to go about class
 
+Confusions
+
+. How the formating of duration works
+. how a class plays into timer
+. connect user input to time logic
+
 
 */
 
