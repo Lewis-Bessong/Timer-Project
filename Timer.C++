@@ -52,12 +52,15 @@ TODO
 . Added to system logic (if conditional, time logic)
 . Figure out how to connect user input to timer knowledge
 . explore ways to go about class
+. do a road map for project for clarity
 
 Confusions
 
 . How the formating of duration works
 . how a class plays into timer
 . connect user input to time logic
+. how to layout project
+
 
 
 */
