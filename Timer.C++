@@ -8,7 +8,15 @@ using namespace std::chrono_literals;
 
 class Timer {
     public:
+        // timer properties
+        std::string TimeName; 
+        Timer() {}; // special member automatically called
 
+        void Restart() {}; // for starting time over again
+        void GEtDeltaTime () {}; // for getting ticks
+        void GetDuration () {};
+
+        
     
 
 
