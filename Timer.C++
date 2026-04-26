@@ -26,13 +26,16 @@ class Timer {
 
         void SystemLogic() {
 
+
             if (UserChoice == "10s") {
+                 
+                std::cout << "Timer Starting Now." << std::endl;
 
-                auto ten_seconds = std::chrono::duration(10s);  // 10 seconds 
+                auto ten_seconds = std::chrono::duration(10s);
 
-                 int sleep = std::this_thread::sleep_for(ten_seconds); 
+                
 
-                while (t)
+                }
 
             }
             
@@ -41,7 +44,7 @@ class Timer {
 
     private:
 
-
+        using namespace std::chrono;
 
 };
 
