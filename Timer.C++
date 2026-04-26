@@ -32,19 +32,13 @@ class Timer {
                 std::cout << "Timer Starting Now." << std::endl;
 
                 auto ten_seconds = std::chrono::duration(10s);
-
-                
-
-                }
-
             }
-            
+          
         }
 
 
     private:
 
-        using namespace std::chrono;
 
 };
 
