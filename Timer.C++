@@ -10,35 +10,31 @@ class Timer {
     public:
         // timer properties
         std::string UserInput;
+        int seconds;
 
-        void Countdown_Timer() {
-            std::chrono::steady_clock::now(); // start from 0 clock
+        void CD_TimerText() {
 
-
-
-
+            std::cout << "Welcome to your Countdown Timer." << std::endl; 
+            std::cout << "Enter Time in seconds ('1', '2'): ";
+            std::cin >> seconds; // seconds propertiey in class
 
         };
-        
-    
 
+        void Countdown_Timer(int UserSeconds) {
+            std::chrono::steady_clock::now(); // start from 0 clock
 
-    private:
+            while (seconds > 0) { // seconds is greater than 0
+                
 
-    
+            }
+        };
+
+    private:  
 };
 
 int main() {
 
 Timer UI; // class object (User Interaction)
-
-UI.UserInput; 
-
-std::cout << "How many seconds would you like your timer?: ";
-std::cin >> UI.UserInput;
-
-
-
 
 
 }   
