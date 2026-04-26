@@ -9,23 +9,36 @@ using namespace std::chrono_literals;
 class Timer {
     public:
         // timer properties
-        std::string TimeName; 
-        Timer() {}; // special member automatically called
+        std::string UserInput;
 
-        void Restart() {}; // for starting time over again
-        void GEtDeltaTime () {}; // for getting ticks
-        void GetDuration () {};
+        void Countdown_Timer() {
+            std::chrono::steady_clock::now(); // start from 0 clock
 
+
+
+
+
+        };
         
     
 
 
     private:
 
+    
 };
 
 int main() {
- 
+
+Timer UI; // class object (User Interaction)
+
+UI.UserInput; 
+
+std::cout << "How many seconds would you like your timer?: ";
+std::cin >> UI.UserInput;
+
+
+
 
 
 }   
