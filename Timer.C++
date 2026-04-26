@@ -54,10 +54,9 @@ CDT.CD_Timer();
 
 TODO
 
-. Added to system logic (if conditional, time logic)
-. Figure out how to connect user input to timer knowledge
-. explore ways to go about class
-. do a road map for project for clarity
+.genuilly figure out whats going on with methods
+.fix thread issue
+.remove class
 
 Confusions
 
