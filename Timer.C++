@@ -12,6 +12,7 @@ class Timer {
         std::string UserInput;
         int seconds;
 
+
         void CD_TimerText() {
 
             std::cout << "Welcome to your Countdown Timer." << std::endl; 
@@ -20,21 +21,31 @@ class Timer {
 
         };
 
-        void Countdown_Timer(int UserSeconds) {
-            std::chrono::steady_clock::now(); // start from 0 clock
+        void CD_Timer() {
 
             while (seconds > 0) { // seconds is greater than 0
+
+                std::cout << "Time: " << seconds << "left!" << std::endl;
                 
+                std::this_thread::sleep_for(std::chrono:seconds(1)); 
+                
+
 
             }
         };
 
     private:  
+
+    
 };
 
 int main() {
 
-Timer UI; // class object (User Interaction)
+Timer CDT ; // Class Varible/Object for countdown timer
+
+CDT.CD_TimerText();
+
+CDT.CD_Timer();
 
 
 }   
