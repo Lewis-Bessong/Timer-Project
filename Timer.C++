@@ -26,6 +26,15 @@ class Timer {
 
         void SystemLogic() {
 
+            if (UserChoice == "10s") {
+
+                auto ten_seconds = std::chrono::duration(10s);  // 10 seconds 
+
+                 int sleep = std::this_thread::sleep_for(ten_seconds); 
+
+                while (t)
+
+            }
             
         }
 
